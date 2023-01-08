@@ -1,0 +1,28 @@
+{
+  "name": "tklesley.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tklesley/tklesley.github.io.git"
+  },
+  "author": "Tyler Lesley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tklesley/tklesley.github.io/issues"
+  },
+  "homepage": "tkl.fyi",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
