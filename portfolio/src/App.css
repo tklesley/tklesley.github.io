@@ -11,8 +11,11 @@ html, body {
 
 .page {
   display: grid;
+  grid-template-areas: "header" "content" "footer";
+  grid-template-rows: 50px 90vh auto;
 }
 
-.header {
-  grid-area: header;
+.content-div {
+  height: 100%;
+  grid-area: content;
 }
