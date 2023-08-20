@@ -7,6 +7,14 @@ html, body {
   width: 100%;
   margin: none;
   padding: none;
+  transition: width .5s, height .5s, transform .5s;
+  transition-timing-function: ease-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: pointer;
 }
 
 .page {
@@ -18,4 +26,16 @@ html, body {
 .content-div {
   height: 100%;
   grid-area: content;
+}
+
+:root{
+  --lightblue: #09a7e5;
+  --darkblue:#0d19c0;
+  --lightgreen: #3cff00;
+  --darkgreen: #035a00;
+  --fuchsia: #a200e2;
+  --purple: #390047;
+  --dark-bg:#221f1f;
+  --light-bg:#f7f3f3;
+  --transparent-bg:rgba(20, 20, 20, 0.7);
 }

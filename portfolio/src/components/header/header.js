@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import './header.css';
 import { AiOutlineHome } from "react-icons/ai";
 import Settings from "../settings/settings";
@@ -10,7 +11,7 @@ export default function Header() {
     return (
         <>
             <div className="header-container">
-                <AiOutlineHome size={45} />
+                <Link to={`/`}><AiOutlineHome size={45} /></Link>
                 <div></div>
                 <button className={`settings-icon settings-button settings-${settingOpen}`} onClick={() => setSettingOpen(!settingOpen)}>
                     Settings

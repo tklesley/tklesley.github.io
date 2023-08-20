@@ -1,0 +1,18 @@
+.p-page {
+    grid-template-areas:
+        'name name name'
+        'sections . . . .'
+        'sections . . . .';
+    grid-gap: 5px;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.p-name {
+    font-size: 50px;
+    grid-area: name;
+}
+
+.p-sections-container {
+    grid-area: sections;
+}

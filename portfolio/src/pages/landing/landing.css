@@ -1,0 +1,68 @@
+.page-layout {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        'name name .'
+        '. sections sections'
+        '. sections sections';
+    grid-gap: 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.name {
+    grid-area: name;
+    font-size: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    justify-self: center;
+    align-self: center;
+}
+
+.sections-container {
+    grid-area: sections;
+    border: 1px solid red;
+}
+
+.tabs {
+    display: flex;
+    font-size: 50px;
+    margin-left: 50px;
+    padding-left: 50px;
+    color: white;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black;
+}
+
+.portfolio {
+    background-image: linear-gradient(to right, darkgreen , lightgreen);
+}
+
+.portfolio:hover {
+    background-image: linear-gradient(to right, darkgreen , darkgreen);
+}
+
+.about {
+    background-image: linear-gradient(to right, darkblue , lightblue);
+}
+
+.about:hover {
+    background-image: linear-gradient(to right, darkblue , darkblue);
+}
+
+.contact {
+    background-image: linear-gradient(to right, purple , fuchsia);
+}
+
+.contact:hover {
+    background-image: linear-gradient(to right, purple , purple);
+}
+
+
+@media screen and (max-width: 600px) {
+    .landing-page {
+        grid-template-areas: "name" "sections";
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr;
+    }
+}
