@@ -1,18 +1,21 @@
 .p-page {
+    display: grid;
     grid-template-areas:
-        'name name name'
-        'sections . . . .'
-        'sections . . . .';
+        'sidebar title .'
+        'sidebar projects projects'
+        'sidebar projects projects';
     grid-gap: 5px;
     grid-template-rows: 1fr 3fr 3fr;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
 }
 
-.p-name {
+.p-title {
     font-size: 50px;
-    grid-area: name;
+    grid-area: title;
 }
 
-.p-sections-container {
-    grid-area: sections;
+.projects-section {
+    grid-area: projects;
 }

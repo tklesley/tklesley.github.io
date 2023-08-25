@@ -8,8 +8,8 @@ export default function Landing() {
             <div className="name">Tyler Lesley</div>
             <div className="sections-container">
                 <Link to={`projects`} className="tabs portfolio">Portfolio</Link>
-                <div className="tabs about">About</div>
-                <div className="tabs contact">Contact</div>
+                <Link to={`about`} className="tabs about">About</Link>
+                <Link to={`contact`} className="tabs contact">Contact</Link>
             </div>
         </div>
     )

@@ -35,27 +35,27 @@
 }
 
 .portfolio {
-    background-image: linear-gradient(to right, darkgreen , lightgreen);
+    background-image: linear-gradient(to right, var(--darkgreen), var(--lightgreen));
 }
 
 .portfolio:hover {
-    background-image: linear-gradient(to right, darkgreen , darkgreen);
+    background-image: linear-gradient(to right, var(--darkgreen), var(--darkgreen));
 }
 
 .about {
-    background-image: linear-gradient(to right, darkblue , lightblue);
+    background-image: linear-gradient(to right, var(--darkblue), var(--lightblue));
 }
 
 .about:hover {
-    background-image: linear-gradient(to right, darkblue , darkblue);
+    background-image: linear-gradient(to right, var(--darkblue), var(--darkblue));
 }
 
 .contact {
-    background-image: linear-gradient(to right, purple , fuchsia);
+    background-image: linear-gradient(to right, var(--darkpurple), var(--lightpurple));
 }
 
 .contact:hover {
-    background-image: linear-gradient(to right, purple , purple);
+    background-image: linear-gradient(to right, var(--darkpurple), var(--darkpurple));
 }
 
 
