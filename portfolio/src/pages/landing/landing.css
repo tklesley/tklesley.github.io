@@ -15,14 +15,12 @@
     grid-area: name;
     font-size: 100px;
     padding: 10px;
-    border: 1px solid black;
     justify-self: center;
     align-self: center;
 }
 
 .sections-container {
     grid-area: sections;
-    border: 1px solid red;
 }
 
 .tabs {
