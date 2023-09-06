@@ -18,4 +18,7 @@
 
 .projects-section {
     grid-area: projects;
+    display: flex;
+    width: 90%;
+    height: 90%;
 }

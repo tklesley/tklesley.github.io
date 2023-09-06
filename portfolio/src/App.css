@@ -29,6 +29,8 @@ a {
 }
 
 :root{
+  --lightmodetext: #000000;
+  --darkmodetext: #FFFFFF;
   --lightblue: #09a7e5;
   --darkblue:#0d19c0;
   --lightgreen: #3cff00;

@@ -10,6 +10,9 @@ import About from './pages/about/about';
 import Contact from './pages/contact/contact';
 
 class App extends React.Component {
+  
+  lightmode = "{--lightmodetext: #000000; --darkmodetext: #FFFFFF; --lightblue: #09a7e5; --darkblue:#0d19c0; --lightgreen: #3cff00; --darkgreen: #035a00; --lightpurple: #a200e2; --darkpurple: #390047; --dark-bg:#221f1f; --light-bg:#f7f3f3;}";
+
   render() {
     return (
       <BrowserRouter>

@@ -1,0 +1,44 @@
+.individual-project {
+    display: grid;
+    grid-template-areas:
+    "proj-tab proj-title"
+    "proj-img proj-img"
+    "proj-desc proj-desc"
+    "proj-link proj-link" ;
+    grid-template-columns: 0px 100%;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    padding: 5px;
+    width: 400px;
+    justify-content: center;
+}
+
+.bg-color-tab {
+    grid-area: proj-tab;
+    height: 20px;
+    width:60px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+}
+
+.proj-title {
+    grid-area: proj-title;
+    font-size: 30px;
+}
+
+.proj-img {
+    grid-area: proj-img;
+}
+
+.proj-desc {
+    grid-area: proj-desc;
+}
+
+.proj-link {
+    grid-area: proj-link;
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
