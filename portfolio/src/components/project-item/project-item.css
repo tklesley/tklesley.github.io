@@ -8,8 +8,10 @@
     grid-template-columns: 0px 100%;
     grid-template-rows: 1fr 2fr 2fr 1fr;
     padding: 5px;
-    width: 400px;
+    width: 300px;
+    min-width: 300px;
     justify-content: center;
+    margin-right: 10px;
 }
 
 .bg-color-tab {
@@ -24,6 +26,7 @@
 
 .proj-title {
     grid-area: proj-title;
+    text-align: center;
     font-size: 30px;
 }
 
@@ -41,4 +44,12 @@
     border: 2px solid black;
     justify-content: center;
     align-items: center;
+}
+
+.indv-placeholder-img {
+    text-align: center;
+    font-size: 40px;
+    background-color: var(--darkblue);
+    color: var(--darkmodetext);
+    border-radius: 5px;
 }

@@ -1,6 +1,36 @@
-@media (prefers-reduced-motion: no-preference) {
-/* */
+/* Site Default Colors */
+
+.page {
+  --lightmodetext: #000000;
+  --darkmodetext: #FFFFFF;
+  --lightblue: #09a7e5;
+  --darkblue:#0d19c0;
+  --lightgreen: #3cff00;
+  --darkgreen: #035a00;
+  --lightpurple: #a200e2;
+  --darkpurple: #390047;
+  --dark-bg:#221f1f;
+  --light-bg:#f7f3f3;
+  --sidebarblue: #95ddff;
+  --transparent-bg:rgba(20, 20, 20, 0.7);
 }
+
+.darkmode {
+  --lightmodetext: #FFFFFF;
+  --darkmodetext: #000000;
+  --lightblue: #0d19c0;
+  --darkblue:#09a7e5;
+  --lightgreen: #035a00;
+  --darkgreen: #3cff00;
+  --lightpurple: #390047;
+  --darkpurple: #a200e2;
+  --dark-bg:#f7f3f3;
+  --light-bg:#221f1f;
+  --sidebarblue: #034868;
+  --transparent-bg:rgba(20, 20, 20, 0.7);
+}
+
+/* App CSS */
 
 html, body {
   height: 100%;
@@ -9,6 +39,7 @@ html, body {
   padding: none;
   transition: width .5s, height .5s, transform .5s;
   transition-timing-function: ease-out;
+  background-color: var(--light-bg);
 }
 
 a {
@@ -21,6 +52,12 @@ a {
   display: grid;
   grid-template-areas: "header" "content" "footer";
   grid-template-rows: 50px 90vh auto;
+  color: var(--lightmodetext);
+  background-color: var(--light-bg);
+  height: 100vh;
+  width: 100%;
+  margin: none;
+  padding: none;
 }
 
 .content-div {
@@ -28,16 +65,3 @@ a {
   grid-area: content;
 }
 
-:root{
-  --lightmodetext: #000000;
-  --darkmodetext: #FFFFFF;
-  --lightblue: #09a7e5;
-  --darkblue:#0d19c0;
-  --lightgreen: #3cff00;
-  --darkgreen: #035a00;
-  --lightpurple: #a200e2;
-  --darkpurple: #390047;
-  --dark-bg:#221f1f;
-  --light-bg:#f7f3f3;
-  --transparent-bg:rgba(20, 20, 20, 0.7);
-}

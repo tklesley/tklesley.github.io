@@ -2,6 +2,13 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    text-align: center;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    background-color: var(--transparent-bg);
+}
+.nav-list {
+    padding: 10px;
 }
 
 .settings-div {
@@ -15,4 +22,34 @@ ul {
 .light-mode-settings {
     align-items: center;
     justify-content: center;
+    border: 4px solid var(--dark-bg);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 50% 0 50%;
+    cursor: pointer;
+}
+
+.settings-circle {
+    position: relative;
+    width: 32px;
+    height: 30px;
+    background-color: var(--dark-bg);
+    border-radius: 30px;
+    transition: right .5s;
+    right: -2px;
+}
+
+.settings-darkmode {
+    right: 32px;
+}
+
+@media only screen and (max-width:700px) {
+    .light-mode-settings {
+        border-color: white;
+        background-color: var(--transparent-bg);
+    }
+
+    .settings-circle {
+        background-color: white;
+    }
 }

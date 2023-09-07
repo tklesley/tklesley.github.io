@@ -9,12 +9,17 @@
 
 .settings-container {
   display: flex;
-  z-index: 2;
-  justify-content: right;
+  z-index: 3;
+  justify-content: center;
   position: absolute;
   top: 50px;
-  right: 15vw;
-  border: 1px solid black;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  overflow-y: hidden;
+  background-color: var(--transparent-bg);
+  color: #FFFFFF;
+  font-size: 50px;
 }
 
 .settings-open-false {
@@ -24,7 +29,13 @@
 /* --------- Settings Icon --------- */
 
 .bar1, .bar2, .bar3 {
-  transition: 0.4s;
+  transition: transform 0.4s;
+}
+
+@media (prefers-reduced-motion) {
+  .bar1, .bar2, .bar3 {
+    transition: none;
+  }
 }
 
 .settings-icon {
@@ -35,7 +46,7 @@
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 0px;
-    border: 2px solid;
+    border: 2px solid var(--dark-bg);
     margin: 3px 0;
   }
   
@@ -57,4 +68,7 @@
     padding: 5px;
     margin: 5px;
     cursor: pointer;
+    border: 5px solid var(--dark-bg);
+    border-radius: 5px;
+    background-color: var(--light-bg);
   }
