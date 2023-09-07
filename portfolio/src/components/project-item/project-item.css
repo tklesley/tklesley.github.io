@@ -36,14 +36,21 @@
 
 .proj-desc {
     grid-area: proj-desc;
+    margin: 0 5px 0 5px;
+    overflow-y: auto;
+    /* Firefox Only */
+    scrollbar-width: thin;
+    scrollbar-color: var(--lightmodetext);
 }
 
 .proj-link {
     grid-area: proj-link;
     display: flex;
-    border: 2px solid black;
+    border: 2px solid var(--dark-bg);
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .indv-placeholder-img {
@@ -51,5 +58,16 @@
     font-size: 40px;
     background-color: var(--darkblue);
     color: var(--darkmodetext);
+    border-radius: 5px;
+}
+
+/* Scrollbar Styling for Browsers Other Than Firefox */
+
+.proj-desc::-webkit-scrollbar {
+    width: 5px;
+}
+
+.proj-desc::-webkit-scrollbar-thumb {
+    background: var(--lightmodetext);
     border-radius: 5px;
 }

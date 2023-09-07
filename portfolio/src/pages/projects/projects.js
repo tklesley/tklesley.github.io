@@ -31,12 +31,12 @@ export default function Projects() {
                 />
                 <ProjectItem 
                     prObj={{
-                        title: "Project 3",
+                        title: "Firebase Blog",
                         bgcolor: "#6600FF",
-                        desc: "This is the third project",
-                        img: "",
-                        alt: "Placeholder",
-                        link: "tkl.fyi"
+                        desc: "This was a project made as part of the Mimo Dev Bootcamp.  It uses Google Firebase to store the data for users and blog posts.  To prevent the site from being griefed, everything is set to read only.  You can create an account, log in/out, and open the Add Article page but you cannot create articles.  Due to Firebase's free quota being small, it is possible to get too many reads.  That may prevent the site from loading properly.",
+                        img: "https://cdn.discordapp.com/attachments/540980108828344330/1149396082577649751/Group_1FB-Blog.png",
+                        alt: "Firebase Blog",
+                        link: "/portfolio/blog"
                     }}
                 />
             </div>
@@ -44,3 +44,17 @@ export default function Projects() {
         </div>
     )
 }
+
+/* Hard coded project item format
+
+                <ProjectItem 
+                                    prObj={{
+                                        title: "Project",
+                                        bgcolor: "#6600FF",
+                                        desc: "This is a project",
+                                        img: "",
+                                        alt: "Placeholder",
+                                        link: "tkl.fyi"
+                                    }}
+                                />
+*/
