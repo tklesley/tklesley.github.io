@@ -23,7 +23,11 @@ export default function App() {
         } else {
             localStorage.setItem("theme-context", "light")
         }
-    }
+    } else {
+      if (localStorage.getItem("theme-context") === "dark") {
+        setDarkmode(true)
+        }
+      }
   }, [])
 
   const toggleDarkmode = () => {
