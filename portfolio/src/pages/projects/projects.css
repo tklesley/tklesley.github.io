@@ -15,6 +15,8 @@
 .p-title {
     font-size: 50px;
     grid-area: title;
+    position: sticky;
+    left: 60px;
 }
 
 .projects-section {
@@ -22,4 +24,10 @@
     display: flex;
     width: 90%;
     height: 90%;
+}
+
+@media only screen and (max-width:700px) {
+    .p-title {
+        left: 20px;
+    }
 }
