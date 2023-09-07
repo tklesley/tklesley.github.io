@@ -7,7 +7,7 @@ import Settings from "../settings/settings";
 export default function Header({toggleDarkmode, darkmode}) {
 
     const [settingOpen, setSettingOpen] = useState(false);
-    const [windowSize, setWindowSize] = useState(701);
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
 
     useEffect(()=>{
         function handleResize() {
