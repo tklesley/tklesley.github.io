@@ -60,19 +60,14 @@ export default function AddArticle({categories}) {
             theme: "light",
             });
           setTimeout(()=>{
-            navigate('/')
+            navigate('/portfolio/blog')
           }, 2000);
         })
         .catch(err=>{console.log(err)})
       })
 
     })
-    .catch(err=>{
-      console.log(err);
-      if (err.message === "Quota exceeded.") {
-        alert("Error: The daily quota for Firebase calls has been met.  Please try again later.")
-      }
-    })
+    .catch(err=>{console.log(err);})
   }
 
   
