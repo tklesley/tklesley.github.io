@@ -98,7 +98,7 @@
     }
     .contact-input textarea {
         min-height:50px;
-        resize: vertical;
+        resize: none;
     }
     
     .c-count {
