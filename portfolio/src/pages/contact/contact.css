@@ -76,8 +76,8 @@
 @media screen and (max-width:700px) {
 
     .contact-form {
-        width:80%;
-        min-width: 400px;
+        width:90%;
+        min-width: 300px;
         margin: auto;
         padding:10px 0;
     }
@@ -107,6 +107,6 @@
     }
 
     .more-contact {
-        min-width: 400px;
+        min-width: 300px;
     }
 }
