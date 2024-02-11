@@ -1,3 +1,8 @@
+.home-page-layout {
+    display: flex;
+    flex-direction: column;
+}
+
 .selected-articles {
     width:90%;
     margin:50px auto;
@@ -38,4 +43,26 @@
     flex-wrap: wrap;
     padding: 5px;
     font-style: italic;
+}
+
+@media(max-width:900px){
+
+    .home-page-layout {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .selected-articles {
+        margin: auto;
+    }
+
+    .selected-image {
+        width: 150px;
+    }
+
+    .selected-info {
+        width: fit-content;
+        height: fit-content;
+        min-height: content;
+    }
 }

@@ -25,7 +25,7 @@ export default function HomePage() {
     })
 
     return (
-        <div>
+        <div className='home-page-layout'>
             <Banner />
             <div className="selected-articles">
                 <h1>Editor's Choice</h1>
