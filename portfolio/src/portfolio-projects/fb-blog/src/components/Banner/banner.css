@@ -42,6 +42,7 @@
         grid-template-columns:1fr;
         grid-template-rows:repeat(2,35vh);
         grid-gap:20px;
+        height: max-content;
      }
      .other-articles-container{
         padding:0;
